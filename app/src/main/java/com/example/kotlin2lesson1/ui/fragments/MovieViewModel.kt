@@ -11,6 +11,7 @@ import javax.inject.Inject
 class MovieViewModel @Inject constructor(
     private val movieRepository: MovieRepository
 ) : BaseViewModel() {
+
     private val _movieState = mutableUiStateFlow<List<FilmDtoX>>()
     var movieState = _movieState.asStateFlow()
 

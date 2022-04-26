@@ -18,6 +18,7 @@ class MovieFragment : BaseFragment<FragmentMovieBinding, MovieViewModel>(R.layou
     override fun assembleViews() {
         setupAdapter()
     }
+
     private fun setupAdapter() {
         binding.recyclerview.apply {
             adapter = movieAdapter

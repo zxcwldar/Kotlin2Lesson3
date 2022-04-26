@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlin2lesson1.base.BaseDiffUtil
-import com.example.kotlin2lesson1.common.extentions.loadImageWithGlide
 import com.example.kotlin2lesson1.data.remote.dtos.FilmDtoX
 import com.example.kotlin2lesson1.databinding.ItemMovieBinding
 
@@ -31,6 +30,9 @@ class MovieAdapter :
             binding.apply {
                 tvTitle.text = data.title
             }
+
+
+
 
         }
     }
