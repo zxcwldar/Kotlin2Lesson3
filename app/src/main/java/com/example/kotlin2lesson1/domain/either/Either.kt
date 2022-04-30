@@ -1,4 +1,4 @@
-package com.example.kotlin2lesson1.common.either
+package com.example.kotlin2lesson1.domain.either
 
 sealed class Either<out A, out B> {
     class Left<out A>(val value: A) : Either<A, Nothing>()

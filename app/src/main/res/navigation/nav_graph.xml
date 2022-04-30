@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.kotlin2lesson1.ui.fragments.MovieFragment"
+        android:name="com.example.kotlin2lesson1.presentation.ui.fragments.MovieFragment"
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie" />
 

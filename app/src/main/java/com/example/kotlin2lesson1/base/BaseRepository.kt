@@ -1,6 +1,6 @@
 package com.example.kotlin2lesson1.base
 
-import com.example.kotlin2lesson1.common.either.Either
+import com.example.kotlin2lesson1.domain.either.Either
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow

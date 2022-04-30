@@ -1,14 +1,14 @@
 package com.example.kotlin2lesson1.data.remote
 
 import com.example.kotlin2lesson1.common.constans.Constants.BASE_URL
-import com.example.kotlin2lesson1.data.remote.apisrvice.MovieApiService
+import com.example.kotlin2lesson1.data.remote.apiservice.MovieApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-class RetrofitClient() {
+class RetrofitClient {
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor(provideLoggingInterceptor())

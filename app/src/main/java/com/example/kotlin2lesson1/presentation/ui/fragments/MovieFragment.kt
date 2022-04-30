@@ -1,9 +1,9 @@
-package com.example.kotlin2lesson1.ui.fragments
+package com.example.kotlin2lesson1.presentation.ui.fragments
 
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.kotlin2lesson1.R
-import com.example.kotlin2lesson1.ui.adapters.MovieAdapter
+import com.example.kotlin2lesson1.presentation.ui.adapters.MovieAdapter
 import com.example.kotlin2lesson1.base.BaseFragment
 import com.example.kotlin2lesson1.databinding.FragmentMovieBinding
 import dagger.hilt.android.AndroidEntryPoint
