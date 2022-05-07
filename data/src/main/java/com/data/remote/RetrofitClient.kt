@@ -14,7 +14,9 @@ class RetrofitClient {
         .writeTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .build()
-    private fun provideLoggingInterceptor = Http
+
+    private fun provideLoggingInterceptor() =
+        HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
 
     private val retrofit = Retrofit.Builder()
@@ -24,6 +26,7 @@ class RetrofitClient {
         .build()
 
     fun provideHeroesApiService(): MovieApiService = retrofit.create(MovieApiService::class.java)
+
 
     companion object {
         const val BASE_URL = "https://ghibliapi.herokuapp.com/"
