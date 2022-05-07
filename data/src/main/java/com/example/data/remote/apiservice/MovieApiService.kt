@@ -1,6 +1,6 @@
-package com.data.remote.apiservice
+package com.example.data.remote.apiservice
 
-import com.data.dtos.FilmDto
+import com.example.data.dtos.FilmDto
 import retrofit2.http.GET
 
 interface MovieApiService {

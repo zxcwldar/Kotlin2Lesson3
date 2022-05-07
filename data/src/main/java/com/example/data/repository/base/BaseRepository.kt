@@ -1,4 +1,4 @@
-package com.data.repository.base
+package com.example.data.repository.base
 
 import com.domain.either.Either
 import kotlinx.coroutines.Dispatchers

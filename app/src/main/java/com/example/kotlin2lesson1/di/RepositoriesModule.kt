@@ -1,7 +1,7 @@
 package com.example.kotlin2lesson1.di
 
-import com.data.repository.MovieRepositoryImpl
 import com.domain.repositories.MovieRepository
+import com.example.data.repository.MovieRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

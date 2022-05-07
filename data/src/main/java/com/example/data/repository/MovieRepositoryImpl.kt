@@ -1,8 +1,8 @@
-package com.data.repository
+package com.example.data.repository
 
-import com.data.dtos.toDomain
-import com.data.remote.apiservice.MovieApiService
-import com.data.repository.base.BaseRepository
+import com.example.data.dtos.toDomain
+import com.example.data.remote.apiservice.MovieApiService
+import com.example.data.repository.base.BaseRepository
 import com.domain.repositories.MovieRepository
 import javax.inject.Inject
 

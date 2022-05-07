@@ -1,4 +1,4 @@
-package com.data.dtos
+package com.example.data.dtos
 
 import com.domain.models.FilmModel
 import com.google.gson.annotations.SerializedName
