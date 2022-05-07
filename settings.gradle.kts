@@ -21,5 +21,5 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "Kotlin2Lesson1"
-include(":app")
+include(":app", ":data", ":domain")
 enableFeaturePreview("VERSION_CATALOGS")

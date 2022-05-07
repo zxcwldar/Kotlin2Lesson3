@@ -1,6 +1,6 @@
-package com.example.kotlin2lesson1.data.remote.apiservice
+package com.data.remote.apiservice
 
-import com.example.kotlin2lesson1.data.dtos.FilmDto
+import com.data.dtos.FilmDto
 import retrofit2.http.GET
 
 interface MovieApiService {

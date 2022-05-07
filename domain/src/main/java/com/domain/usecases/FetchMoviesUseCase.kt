@@ -1,6 +1,6 @@
-package com.example.kotlin2lesson1.domain.usecases
+package com.domain.usecases
 
-import com.example.kotlin2lesson1.domain.repositories.MovieRepository
+import com.domain.repositories.MovieRepository
 import javax.inject.Inject
 
 class FetchMoviesUseCase @Inject constructor(private val repository: MovieRepository) {

@@ -1,7 +1,7 @@
 package com.example.kotlin2lesson1.presentation.ui.fragments
 
+import com.domain.usecases.FetchMoviesUseCase
 import com.example.kotlin2lesson1.base.BaseViewModel
-import com.example.kotlin2lesson1.domain.usecases.FetchMoviesUseCase
 import com.example.kotlin2lesson1.presentation.models.FilmUI
 import com.example.kotlin2lesson1.presentation.models.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel

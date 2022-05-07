@@ -1,7 +1,7 @@
 package com.example.kotlin2lesson1.presentation.models
 
+import com.domain.models.FilmModel
 import com.example.kotlin2lesson1.base.BaseDiffModel
-import com.example.kotlin2lesson1.domain.models.FilmModel
 
 
 data class FilmUI(

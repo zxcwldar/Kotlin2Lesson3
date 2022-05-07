@@ -15,9 +15,6 @@ plugins {
     // Hilt
     id("com.google.dagger.hilt.android")
 
-
-    id("kotlin-parcelize")
-
 }
 
 android {
@@ -48,23 +45,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    packagingOptions {
-        resources.pickFirsts.add("META-INF/*")
-        resources.excludes.add("META-INF/DEPENDENCIES")
-        resources.excludes.add("META-INF/LICENSE")
-        resources.excludes.add("META-INF/LICENSE.txt")
-        resources.excludes.add("META-INF/license.txt")
-        resources.excludes.add("META-INF/NOTICE")
-        resources.excludes.add("META-INF/NOTICE.txt")
-        resources.excludes.add("META-INF/notice.txt")
-        resources.excludes.add("META-INF/ASL2.0")
-        resources.excludes.add("META-INF/*")
-    }
     //ViewBinding
     buildFeatures.viewBinding = true
 }
 
 dependencies {
+
+    implementation(project(":data"))
+    implementation(project(":domain"))
     // UI Components
     implementation(libs.bundles.uiComponents)
 
@@ -79,26 +67,14 @@ dependencies {
     implementation(libs.fragment.fragment)
 
     // Lifecycle
-    implementation(libs.bundles.lifecycleBundle)
+    implementation(libs.bundles.lifecycle)
 
     // Navigation
-    implementation(libs.bundles.navigationBundle)
-
-    // Retrofit
-    implementation(libs.bundles.retrofitBundle)
-
-    // OkHttpClient
-    implementation("com.squareup.okhttp3:logging-interceptor")
-    implementation("com.squareup.okhttp3:okhttp")
-    implementation(libs.okHttp.bom)
+    implementation(libs.bundles.navigation)
 
     // Hilt
-    implementation(libs.hilt.hilt)
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
-
-    // Legacy Support
-    implementation(libs.legacySupport.legacySupport)
 
     // Glide
     implementation(libs.glide.glide)
@@ -106,9 +82,6 @@ dependencies {
     // SplashScreen
     implementation(libs.ui.splashScreen)
 
-    // Room
-    implementation(libs.bundles.roomBundle)
-    kapt(libs.room.compiler)
 
     implementation("com.jakewharton.timber:timber:5.0.1")
 }

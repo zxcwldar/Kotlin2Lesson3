@@ -1,12 +1,12 @@
-package com.example.kotlin2lesson1.data.dtos
+package com.data.dtos
 
-import com.example.kotlin2lesson1.base.BaseDiffModel
-import com.example.kotlin2lesson1.domain.models.FilmModel
+import com.domain.models.FilmModel
 import com.google.gson.annotations.SerializedName
+
 
 data class FilmDto(
     @SerializedName("id")
-    override val id: String,
+     val id: String,
     @SerializedName("title")
     val title: String,
     @SerializedName("original_title")
@@ -39,7 +39,7 @@ data class FilmDto(
     val vehicles: List<String>,
     @SerializedName("url")
     val url: String
-) : BaseDiffModel
+)
 
 fun FilmDto.toDomain() = FilmModel(
     id,

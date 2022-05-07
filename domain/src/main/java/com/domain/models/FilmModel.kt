@@ -1,4 +1,4 @@
-package com.example.kotlin2lesson1.domain.models
+package com.domain.models
 
 data class FilmModel(
     val id: String,

@@ -2,7 +2,7 @@ package com.example.kotlin2lesson1.base
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.kotlin2lesson1.domain.either.Either
+import com.domain.either.Either
 import com.example.kotlin2lesson1.presentation.ui.state.UiState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

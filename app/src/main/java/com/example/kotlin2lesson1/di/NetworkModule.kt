@@ -1,6 +1,6 @@
 package com.example.kotlin2lesson1.di
 
-import com.example.kotlin2lesson1.data.remote.RetrofitClient
+import com.data.remote.RetrofitClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

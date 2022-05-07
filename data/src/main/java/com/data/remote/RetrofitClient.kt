@@ -1,9 +1,7 @@
-package com.example.kotlin2lesson1.data.remote
+package com.data.remote
 
-import com.example.kotlin2lesson1.common.constans.Constants.BASE_URL
-import com.example.kotlin2lesson1.data.remote.apiservice.MovieApiService
+import com.data.remote.apiservice.MovieApiService
 import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
@@ -16,9 +14,8 @@ class RetrofitClient {
         .writeTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .build()
+    private fun provideLoggingInterceptor = Http
 
-    private fun provideLoggingInterceptor() =
-        HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
@@ -27,6 +24,10 @@ class RetrofitClient {
         .build()
 
     fun provideHeroesApiService(): MovieApiService = retrofit.create(MovieApiService::class.java)
+
+    companion object {
+        const val BASE_URL = "https://ghibliapi.herokuapp.com/"
+    }
 
 
 }

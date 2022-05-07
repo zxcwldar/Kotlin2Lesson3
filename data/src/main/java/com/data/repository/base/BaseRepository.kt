@@ -1,10 +1,11 @@
-package com.example.kotlin2lesson1.base
+package com.data.repository.base
 
-import com.example.kotlin2lesson1.domain.either.Either
+import com.domain.either.Either
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+
 
 abstract class BaseRepository {
     protected fun <T> sendRequest(
