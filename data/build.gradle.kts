@@ -36,5 +36,4 @@ dependencies {
     implementation(project(":domain"))
     implementation(libs.bundles.okHttp)
     implementation(libs.bundles.retrofit)
-    implementation(libs.coroutines.android)
 }

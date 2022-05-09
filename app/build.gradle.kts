@@ -56,15 +56,8 @@ dependencies {
     // UI Components
     implementation(libs.bundles.uiComponents)
 
-
     // Core
     implementation(libs.android.core)
-
-    // Activity
-    implementation(libs.activity.activity)
-
-    // Fragment
-    implementation(libs.fragment.fragment)
 
     // Lifecycle
     implementation(libs.bundles.lifecycle)
@@ -74,14 +67,11 @@ dependencies {
 
     // Hilt
     implementation(libs.hilt.android)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     kapt(libs.hilt.compiler)
 
-    // Glide
-    implementation(libs.glide.glide)
-
-    // SplashScreen
-    implementation(libs.ui.splashScreen)
+    //Coroutines
+    implementation(libs.coroutines.android)
 
 
-    implementation("com.jakewharton.timber:timber:5.0.1")
 }
