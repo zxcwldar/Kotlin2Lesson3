@@ -13,6 +13,5 @@ class MovieRepositoryImpl @Inject constructor(
     override fun fetchMovies() = sendRequest {
         movieApiService.getTvShows().map { it.toDomain() }
 
-
     }
 }

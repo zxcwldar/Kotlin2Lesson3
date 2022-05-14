@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlin2lesson1.base.BaseDiffUtil
+import com.example.kotlin2lesson1.common.extentions.loadImageWithGlide
 import com.example.kotlin2lesson1.databinding.ItemMovieBinding
 import com.example.kotlin2lesson1.presentation.models.FilmUI
 
@@ -29,7 +30,7 @@ class MovieAdapter :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: FilmUI) {
             binding.apply {
-                tvTitle.text = data.title
+                imImage.loadImageWithGlide(data.image)
             }
 
 

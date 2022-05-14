@@ -24,7 +24,7 @@ data class FilmUI(
     val url: String
 ) : BaseDiffModel
 
-fun FilmModel.toUI() = FilmUI(
+    fun FilmModel.toUI() = FilmUI(
     id, title, originalTitle,
     originalTitleRomanised, image,
     movieBanner, description,

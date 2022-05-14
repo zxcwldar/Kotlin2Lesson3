@@ -1,5 +1,6 @@
 package com.example.kotlin2lesson1.presentation.ui.fragments
 
+import com.domain.models.FilmModel
 import com.domain.usecases.FetchMoviesUseCase
 import com.example.kotlin2lesson1.base.BaseViewModel
 import com.example.kotlin2lesson1.presentation.models.FilmUI
@@ -24,6 +25,5 @@ class MovieViewModel @Inject constructor(
 
     fun fetchMovies() =
         fetchMoviesUseCase().gatherRequest(_movieState) { it -> it.map { it.toUI() } }
-
 
 }
