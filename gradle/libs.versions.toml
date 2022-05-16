@@ -129,8 +129,8 @@ lifecycle = ["lifecycle-viewModel", "lifecycle-runtime", "lifecycle-liveData"]
 
 
 [plugins]
-#AGP
 
+#AGP
 agp-application = { id = "com.android.application", version.ref = "agp" }
 agp-library = { id = "com.android.library", version.ref = "agp" }
 

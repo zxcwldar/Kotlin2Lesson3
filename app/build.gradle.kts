@@ -1,7 +1,7 @@
 plugins {
 
     // Application
-    id("com.android.application")
+    id(libs.plugins.agp.application.get().pluginId)
 
     // Kotlin
     id("kotlin-android")
@@ -10,10 +10,10 @@ plugins {
     id("kotlin-kapt")
 
     // Navigation SafeArgs
-    id("androidx.navigation.safeargs.kotlin")
+    id(libs.plugins.navigation.safeArgs.get().pluginId)
 
     // Hilt
-    id("com.google.dagger.hilt.android")
+    id(libs.plugins.hilt.android.get().pluginId)
 
 }
 
