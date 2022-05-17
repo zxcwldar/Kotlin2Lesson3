@@ -1,6 +1,8 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id(libs.plugins.agp.library.get().pluginId)
+    kotlin("android")
+    // Kapt
+    id("kotlin-kapt")
 }
 
 android {
